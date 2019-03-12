@@ -77,6 +77,4 @@ public class SeanceVo {
         this.idGroupe = idGroupe;
     }
     
-    
-    
 }

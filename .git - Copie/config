@@ -1,0 +1,11 @@
+[pack]
+	buildbitmaps = false
+[core]
+	symlinks = false
+	repositoryformatversion = 0
+	filemode = false
+	logallrefupdates = true
+	bare = false
+[remote "origin"]
+	url = https://elias_turki%40hotmail.fr@github.com/eliasturki/ibn-alhaytham.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
