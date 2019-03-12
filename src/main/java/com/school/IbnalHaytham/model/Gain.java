@@ -6,6 +6,7 @@
 package com.school.IbnalHaytham.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.CascadeType;
@@ -35,12 +36,12 @@ public class Gain implements Serializable {
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     private Niveau idNiveau;
  
-//    @JsonIgnore
+   // @JsonIgnore
     @JoinColumn(name = "idModule", referencedColumnName = "idModule")
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     private Module idModule;
     
-    //@JsonIgnore
+    @JsonIgnore
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "idGain", fetch = FetchType.LAZY)
     private List<Inscription> inscList;
     
